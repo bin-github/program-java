@@ -1,4 +1,4 @@
-package qb.name.controller;
+﻿package qb.name.controller;
 
 import com.google.common.base.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import qb.name.dao.daoImpl.UserMapperImpl;
 import qb.name.entities.User;
+import qb.name.utils.Encryption;
 
 /**
- * @author <a href="qiaotaosheng@wxchina.com">TaoSheng.Qiao</a>
- * @version 1.0.0
+ * @author qb
  * @description:  user login
  * @date 2017-1-14 17:23
  */
@@ -31,7 +31,9 @@ public class LoginController {
         String returnStr = "用户查找失败！";
         User user = userDao.selectUserByName(name);
         if(user != null){
-            returnStr = user.toJson();
+            if(user.getPassword().equals(Encryption.mixMd5(password))){
+                returnStr = user.toJson();
+            }
         }
         return returnStr;
     }
