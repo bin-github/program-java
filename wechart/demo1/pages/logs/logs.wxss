@@ -6,6 +6,3 @@
 .log-item {
   margin: 10rpx;
 }
-.container log-list{
-  background-size: #79CDCD;
-}

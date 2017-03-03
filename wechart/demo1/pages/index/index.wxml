@@ -15,7 +15,7 @@
       <text class= "text">密码：</text>
     </view>
     <view class="inputView" style="margin-top: 10% ">
-      <input class="input" password ="true" placeholder="pwd" placeholder-style="color: #AFEEEE" bindinput="listenerPwdInput" ></input>
+      <input class="input" password ="true" placeholder="pwd" placeholder-style="color: red" bindinput="listenerPwdInput" ></input>
     </view>
 
     <view class="btn-area" style="margin-top:30%;">
@@ -28,3 +28,4 @@
     
   </view>
 </view>
+

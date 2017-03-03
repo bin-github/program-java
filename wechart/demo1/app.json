@@ -1,36 +1,28 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/views/mainView/mainView",
-    "pages/views/ArticleView/article",
-    "pages/views/photo/photo",
-    "pages/views/photo/photo1",
+    "pages/mainView/mainView",
+    "pages/views/mainIndex/mainIndex",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#79CDCD",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"black"
   },
-  "tabBar":{
+   "tabBar":{
     "color": "#red",
     "selectedColor":"red",
     "selectColor":"#fff",
     "borderStyle":"red",
     "backgroundColor":"#B4EEB4",
     "list":[{
-      "pagePath": "pages/views/ArticleView/article",
-      "text":"首页"
-    },{
       "pagePath": "pages/logs/logs",
       "text":"日志"
     },{
-      "pagePath": "pages/views/mainView/mainView",
-      "text":"我的"
-    },{
-      "pagePath": "pages/views/photo/photo1",
-      "text":"图片"
+      "pagePath": "pages/views/mainIndex/mainIndex",
+      "text":"主页"
     }]
   }
 }

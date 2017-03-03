@@ -1,8 +1,5 @@
 //index.js
-//获取应用实例
-// @importScripts("../views/mainView/mainView.js")
 var app = getApp();
-
 Page({
   data: {
     motto:'',
@@ -19,22 +16,17 @@ Page({
 
   // 用户登录
   submitClick:function(){
-    debugger
     // bindViewTap:function(){
       var name = this.data.user.name;
       var pwd = this.data.user.pwd;
       var upImg = this.data.upImg;
-      debugger
       if(name == "11" && pwd == "11"){
         var url = this.data.url.urlMain;
         this.setData({
           motto:''
         })
-        debugger
-        // this.skipToText(url,name,pwd,upImg);
         wx.navigateTo({
-          // url: '../views/mainView/mainView'
-          url: '../logs/logs'
+          url: '../mainView/mainView' + '?name='+ name+'&pwd='+pwd + '&upImg=' + upImg
         })
       }else{
         this.setData({
@@ -42,17 +34,8 @@ Page({
         })
       }
   }, 
-
-  // 跳转函数
-  skipToText:function(url,name,pwd,upImg){
-    wx.navigateTo({
-      // url: url + '?name='+ name+'&pwd='+pwd + '&upImg=' + upImg
-      url: '../logs/logs'
-    })
-  },
-
   
-  //事件处理函数
+  //事件处理方法
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
@@ -72,6 +55,7 @@ Page({
     })
   },
 
+  // 用户名和密码的输入框监控方法
   listenerNameInput:function(e){
       this.data.user.name = e.detail.value;
   },
@@ -80,4 +64,5 @@ Page({
   }
  
 })
+
 

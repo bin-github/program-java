@@ -6,13 +6,12 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    // 设置头像图片缓存
+     // 设置头像图片缓存
     var uImag = wx.getStorageSync('upImg') || [];
     wx.setStorageSync('upImg',uImag);
-
   },
   getUserInfo:function(cb){
-    var that = this;
+    var that = this
     if(this.globalData.userInfo){
       typeof cb == "function" && cb(this.globalData.userInfo)
     }else{
@@ -21,12 +20,12 @@ App({
         success: function () {
           wx.getUserInfo({
             success: function (res) {
-              that.globalData.userInfo = res.userInfo;
+              that.globalData.userInfo = res.userInfo
               typeof cb == "function" && cb(that.globalData.userInfo)
             }
           })
         }
-      });
+      })
     }
   },
   globalData:{

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="containerOuter">
+    <view class="person-Id">
+      <text calss="person-Id">个人主页登录</text>
+    </view>
+    <view class="userName">
+       <text calss="user-name">用户名: ddd </text>
+    </view>
+    <view class="userPwd">
+      <text calss="user-age">密  码: ddd </text>
+    </view>
+  </view>
+</view>
