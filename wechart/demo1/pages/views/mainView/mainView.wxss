@@ -1,0 +1,65 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  /*width: 30%;*/
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+
+.container,.containerInner{
+  background: #79CDCD;
+}
+
+.containerInner{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.containerOuter{
+  height: 70%;
+}
+
+.inputView{
+  border:  2px solid burlywood;
+  border-radius: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+}
+.input{
+    padding-left: 10px;
+    height: 20px;
+    width: 90%;
+}
+
+
+
+
+.personId text {
+  /*background: #63B8FF;*/
+  color: #CD6839;
+}
+
+.userPwd, .userEmail, .userName {
+  /*color: #195;*/
+  align-content: space-around;
+  margin-top:15%;
+}

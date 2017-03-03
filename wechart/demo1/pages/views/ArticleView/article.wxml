@@ -1,0 +1,12 @@
+<!-- 显示文章页面  -->    
+<view class="container" style="background: #79CDCD;height: 100%" >
+
+    <text class="text" style="color:red;margin-top:-10%" align-items="center">风</text>
+    <text class="text" style="color:red;margin-top: 10%" >{{datas}}</text>
+
+    <view class="section__ctn">
+        <image style="width: 150px; height: 70px;margin-top:10%" mode="scaleToFill" src="{{src}}" bindtap="backToIndex" ></image>
+    </view>
+
+</view>
+    

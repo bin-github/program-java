@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="containerOuter">
+    <view class="person-Id">
+      <text calss="person-Id">个人主页登录</text>
+    </view>
+    <view class="show">
+      <text class= "text">用户名：</text>
+    </view>
+    <view class="inputView" style="margin-top: 10% ">
+      <input class="input" type ="number" placeholder="name" placeholder-style="color: #AFEEEE" bindinput="listenerNameInput" ></input>
+    </view>
+
+    <view class="show">
+      <text class= "text">密码：</text>
+    </view>
+    <view class="inputView" style="margin-top: 10% ">
+      <input class="input" password ="true" placeholder="pwd" placeholder-style="color: #AFEEEE" bindinput="listenerPwdInput" ></input>
+    </view>
+
+    <view class="btn-area" style="margin-top:30%;">
+       <button class="btn-skip" bindtap="submitClick">登录</button>
+    </view>
+
+    <view class="error-show">
+       <text >{{motto}} </text>
+    </view>
+    
+  </view>
+</view>

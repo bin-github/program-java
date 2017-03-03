@@ -1,0 +1,30 @@
+<!--主页面-->
+<view class="container">
+  <view class="containerOuter">
+    <text calss="person-Id">个人主页设置</text>
+    <view class="containerInner">
+      <view class="userinfo" >
+         <image wx:if="{{upImg != null}}" class="userinfo-avatar" src="{{upImg}}" style="width: 70px; height:70px" mode="scaleToFill"></image>
+         <image wx:else class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          <!--<image  class="userinfo-avatar" src="apptmpfile__1677513727_o6zAJszvH_cs5Zvd8ZqiJocr_0yo_1475201875126" background-size="cover"></image>-->
+      </view>
+    </view>
+    <view class="userName">
+       <text calss="user-name">用户名: {{user.name}}</text>
+    </view>
+    <view class="userPwd">
+      <text calss="user-age">密  码: {{user.pwd}}</text>
+    </view>
+    <view class="userEmail">
+      <text calss="user-sex">邮  箱: {{user.email}}</text>
+    </view>
+    <view class="userEmail">
+      <input class="input" type="text" placeholder="email" bindViewTap="listenerEmailInput"></input>
+    </view>
+  
+    <view class="button" style="margin-top:30%;">
+      <button type="primary"  bindtap="setUserImage" hover-class="outher-button-hover" background-size="cover" >选择头像</button>
+    </view>
+    
+  </view>
+</view>
